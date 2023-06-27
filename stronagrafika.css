@@ -3,18 +3,13 @@
   }
   
 
+    
+   body {
+  min-height: 90%;
+ position:relative;
+}
+    
 
-    
-  
-  body { 
-    
-    background-position: center center;
-    margin:0;
-		padding:0;
-		height:100%;
-    }
-  
-  
        }
   
        h1 {
