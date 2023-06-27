@@ -32,7 +32,8 @@
         text-align: center;
         justify-content: center;
       
-        color: rgb(247, 251, 253);
+        color: rgb(59, 33, 150);
+	       font-color: white;
         font-size: 15px;
         bottom: 0;
         width: 100%;
