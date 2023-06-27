@@ -8,10 +8,34 @@
     <meta name=”robots” content=”noindex>
     <title>Napisz do nas</title>
     <link rel="stylesheet" href="napiszdonas.css" type="text/css" > 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+     <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lfy8ssmAAAAAGvqrhV-pxgRHFuaKUdip3b2CkiN"></script>
+    <head>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=site_key
+        </script>
+    </head>
+
     <title>Napisz wiadmość</title>
 </head>
 <body>
+     <div class="recaptch">
+  <script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6Lfy8ssmAAAAAGvqrhV-pxgRHFuaKUdip3b2CkiN', {action: 'LOGIN'});
+        // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+        // reCAPTCHA Enterprise to the end user's browser.
+        // This token must be validated by creating an assessment.
+        // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+      });
+    }
+  </script>
+        <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+</script>   
+  </div>
         <img src="zajac.jpg" alt="zajac" title="Cześć!Miło Cię widzieć!"
     width="200" 
      height="200"/
@@ -35,18 +59,22 @@ name="msg"
 rows="10"
 placeholder="Wpisz wiadomość"></textarea> <br><br>
 <input
+<input
 name="_redirect"
 type="hidden"
 id="name"
 value="#">
+<input name="_redirect" type="hidden" id="name" value="https://monikafrk.github.io/male.ssaki/">
 <input value=" Wyślij "  type="submit"></button>
     
 <input value=" Zresetuj " type="reset" ></button>
-        
+
         <div class="powrot"> 
   <a href="https://monikafrk.github.io/male.ssaki/">Powrót do strony głównej  <br><br>  <br><br></a>
+            <input name="_redirect" type="hidden" id="name" value="https://monikafrk.github.io/male.ssaki/">
 
 </div>
+
 
  
 
